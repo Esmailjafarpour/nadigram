@@ -16,7 +16,7 @@ import {AuthContext} from "../contexts/AuthContextProvider";
 
 const Chats = () => {
 
-     const {loading , setLoading} = useState(true);
+     const [loading , setLoading] = useState(true);
      const user = useContext(AuthContext);
      const history = useHistory();
 
