@@ -13,6 +13,7 @@ const AuthContextProvider = ({children}) => {
      useEffect(() => {
           auth.onAuthStateChanged(user => {
                setUser(user)
+               console.log(user)
                setLoading(false)
                if(user) history.push("/chats")
           })
